@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - name: service
+          image: vishal511/go-hello-world:latest
+          ports:
+            - containerPort: 4000
+          env: 
+            - name: SERVER_PORT
+              value: '4000' 
+
+                  
