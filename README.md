@@ -1,10 +1,4 @@
-You're absolutely right! If you're deploying the application to a **Kubernetes cluster** and have configured the **Deployment YAML** properly, Kubernetes will automatically pull the Docker image for you from Docker Hub (or any other container registry) when you apply the deployment. You don’t need to manually pull the Docker image before deploying the application to Kubernetes.
-
-Here's the updated **README** with that clarification:
-
----
-
-# docker-k8s-go Sample
+# docker-k8s-go-demo
 
 This repository contains a sample Go application using Docker and Kubernetes. The application is a simple **"Hello World"** program served using **Gorilla Mux** and deployed within Docker containers, managed by Kubernetes.
 
